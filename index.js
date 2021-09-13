@@ -22,8 +22,8 @@ const DELAY = 1000;
 let intervalId = null;
 
 function onStartColorSwitchBtnClick() {
-  intervalId = setInterval(() => {
     startColorSwitchBtn.disabled = true;
+  intervalId = setInterval(() => {
    body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
 }, DELAY)
 }
